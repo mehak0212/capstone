@@ -1,0 +1,166 @@
+<html>
+    <head>
+        <title>3D Object Reconstruction using Multiple 2D Images</title>
+        <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/style.css')}}">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+       <style>
+           .aboutph
+           {
+               display:none;
+           }
+
+           @media(max-width: 576px)
+           {
+               .submit
+               {
+                   margin-top: 15%;
+                   margin-right: 0%;
+               }
+               .about
+               {
+                   display:none;
+               }
+               .aboutph
+               {
+                   display: block;
+               }
+               .text h1
+               {
+                   font-size: 30px;
+               }
+               .text p
+               {
+                   font-size: 20px;
+               }
+               .submit
+               {
+                   font-size: 20px;
+               }
+               .heading
+               {
+                   font-size: 35px;
+                   text-align: center;
+               }
+           }
+       </style>
+       
+    </head>
+    <body class="body">
+        <header>
+            <nav class="navbar navbar-style">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#micon">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a href="#index"><img class="logo" src="{{url_for('static',filename='images/image/logo.png')}}"></a>
+    
+                    </div>
+                    <div class="collapse navbar-collapse" id="micon">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#index">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                    </ul>
+                </div>
+                </div>
+            </nav>
+            <div id="index">
+                <div class="container">
+                    <div class="col-sm-6">
+                        <h1 class="heading">3D Object Reconstruction using Multiple 2D Images</h1>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="submit">   
+                            <form class="p-3 text-center" action='/', method="post" enctype="multipart/form-data">
+                                <input class="form-control" type="file" name="imagefile">
+                                <input class="btn btn-primary mt-3" type="submit" value="Submit">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="text">
+                    <div>
+                        <h1>Why?</h1>
+                        <p>There is an increasing need for geometric 3D models in areas such as movies, games, and virtual environments. But the demands are yet to be met, hence we wish to achieve a better understanding of 3D models and how they can be created from 2D images, with less computational cost.</p>
+                    </div>
+                    <div>
+                        <h1>What?</h1>
+                        <p>Our purpose is to widen the scope of 3D modeling in the medical world. We will focus on the works which use Deep learning, Computer vision, and Machine learning techniques to estimate the 3D shape of generic objects either from a single or multiple RGB images and create a voxelized 3D model.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="about"></div>
+                <div class="container">
+                    <div class="about">  
+                        <p>OUR TEAM</p> 
+                        <div class="col-sm-3">
+                            <div class="member">
+                                <div>
+                                <h1>Anuraag Saxena</h1>
+                                <h2>101915202</h2>
+                                </div>
+                                <a href="#index"><img class="logo" src="{{url_for('static',filename='images/image/anuraag.png')}}"></a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="member">
+                                <div>
+                                <h1>Mehak</h1>
+                                <h2>101915203</h2>
+                                </div>
+                                <a href="#index"><img class="logo" src="{{url_for('static',filename='images/image/mehak.png')}}"></a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="member">
+                                <div>
+                                <h1>Kirti Chauhan</h1>
+                                <h2>101915204</h2>
+                                </div>
+                                <a href="#index"><img class="logo" src="{{url_for('static',filename='images/image/kirti.png')}}"></a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3">
+                            <div class="member">
+                                <div>
+                                <h1>Akshit Agrawal</h1>
+                                <h2>101915206</h2>
+                                </div>
+                                <a href="#index"><img class="logo" src="{{url_for('static',filename='images/image/akshit.png')}}"></a>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="aboutph">
+                        <p>TEAM</p> 
+                       
+                                <h1>Anuraag Saxena:</h1>
+                                <h2>101915202</h2>
+                                <h1>Mehak:</h1>
+                                <h2>101915203</h2>
+                                <h1>Kirti Chauhan:</h1>
+                                <h2>101915204</h2>
+                                <h1>Akshit Agrawal:</h1>
+                                <h2>101915206</h2>
+                            
+
+                    </div>
+                </div>
+
+        </header>
+    </body>
+</html>
+
+
+
+    
